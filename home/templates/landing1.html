@@ -1,0 +1,495 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<style>
+
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+
+
+</style>
+<div class="page-header header-filter">
+
+          <video autoplay muted loop id="myVideo">
+  <source src="{% static 'img/output_free.mp4' %}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+        </div>
+
+
+
+
+
+
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <!-- <div class="page-header page-header-small">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('{% static 'img/bg.jpg' %}');">
+      </div>
+      <div class="content-center">
+        <div class="container">
+          <img class="img img-fluid sattu satish" src="{% static 'img/millilogo.png' %}">
+
+          <h2 class="title">Millennium Booksource Pvt. Ltd.</h2>
+          <div class="text-center">
+            <a href="#" class="btn bt btn-icon btn-round">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" class="btn bt btn-icon btn-round">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="btn bt btn-icon btn-round">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="section section-about-us" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title" style="font-weight: normal;">Who we are?</h2>
+            <h5 class="description" style="font-weight: normal; color:black;">Millennium Booksource is the pioneer of the era of child-centric learning that requires textbooks to be more interesting and logical. Our new-age textbook material is closely intertwined with our e-books to aid the logical understanding of the learners.</h5>
+          </div>
+        </div>
+        <div class="separator separator-primary"></div>
+        <div class="section-story-overview">
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="image-container image-left" style="background-image: url('{% static 'img/bg38.jpg' %}')">
+                <p class="blockquote blockquote-primary">"I Listen, I forget.<br>
+I Read, I Remember..<br>
+I Do, I Understand..<br>
+I Master, I Achieve."
+                  <br>
+                  <br>
+                  <small>-Millennium</small>
+                </p>
+              </div>
+              <!-- Second image on the left side of the article -->
+              <div class="image-container image-left-bottom" style="background-image: url('{% static 'img/bg24.jpg' %}')"></div>
+            </div>
+            <div class="col-md-5">
+              <!-- First image on the right side, above the article -->
+              <div class="image-container image-right" style="background-image: url('{% static 'img/bg39.jpg' %}')"></div>
+              <h3 style="font-weight: normal;">"The Fun Way to Learn"</h3>
+              <p style="font-weight: normal;">Our technology based teaching-learning products cater to the creative and constructive needs of young minds through enticing educational activities and games. The study material is meticulously designed by teachers and educators to engage all kinds of learners and to enhance.
+              </p>
+              <p style="font-weight: normal;">Millennium Booksource Pvt. Ltd. marks a new milestone in the field of textbook publishing in India.
+                 The project is an outcome of several years of intense research and development, starting with the basic hypothesis that school children do not enjoy studying their textbooks.
+                 These books tend to be dull and uninspiring - in terms of design, typography, style and content and hence do not appeal to young minds.  </p>
+              <p style="font-weight: normal;">For the first time ever, the publishers seek to break away the stereotypes of textbooks by presenting the syllabus in such a way that young readers and teachers alike are assured of a very new experience.<br>
+                In view of this, the project objective has been to create a perfect blend of style, lucid writing, user-friendly layout, attractive illustrations/graphics, and an easy-to-use structure - the cumulative effect being the development of an ‘Excellent Educational Aid’.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="separator-line separator-primary"></div>
+
+    <div class="projects-5" id="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 ml-auto mr-auto text-center">
+            <h2 class="title" style="color:white;">Our flagship series of textbooks includes</h2>
+            <!-- <h4 class="description">This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.</h4> -->
+            <div class="section-space"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 ml-auto">
+            <div class="card card-raised" style="background-image: url('{% static 'img/milli/2.jpeg' %}');height:100%" >
+              <div class="card-body">
+                <!-- <h2 class="card-title">Social Analytics</h2> -->
+                <!-- <p class="card-description">
+                  Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences.
+                </p> -->
+                <!-- <label class="badge badge-neutral">Analytics</label> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="info info-horizontal" style="max-width:100%;">
+              <div class="icon icon-danger">
+                <!-- <i class="now-ui-icons ui-book"></i> -->
+              </div>
+              <div class="description">
+                <h3 class="info-title" style="color:white;">Books</h3>
+                <p class="description" style="color:white; font-size:1.2em; font-weight: normal;">
+                  While designing a book we ensure :
+                  <ul type="1">
+                    <li style="font-size:16px; color:white; font-weight: normal;">The presentation of the syllabus in a simple and interesting format. </li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Use of correct mix of lucid language, design style and structural approach to ensure effective communication with the target reader.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Use of language in accordance with the level for which the book is written and approved by child psychologist, language experts and various editors.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Easy to read approach with appropriate typography.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Feast for eyes with extensive use of graphics and illustrations.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Reader friendly ambience through the use of airy layout, plenty of breathing space and modern style of placing the text.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">A practical and activity oriented tool for the teachers.</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- <div class="info info-horizontal">
+              <div class="icon icon-danger">
+                <i class="now-ui-icons business_chart-pie-36"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Performance Analyze</h4>
+                <p class="description">
+                  Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports.
+                </p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-danger">
+                <i class="now-ui-icons design-2_ruler-pencil"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Social Conversions</h4>
+                <p class="description">
+                  Track actions taken on your website that originated from social, and understand the impact on your bottom line.
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6 ml-auto mt-5">
+            <div class="info info-horizontal" style="max-width:100%;">
+              <div class="icon icon-warning">
+                <!-- <i class="now-ui-icons users_single-02"></i> -->
+              </div>
+              <div class="description">
+                <h3 class="info-title" style="color:white;">Digital Support Ebooks</h3>
+                <p class="description" style="color:white; font-size:1.2em; font-weight: normal;">
+                  While designing the multimedia software in the form of Ebooks, we ensure :
+                  <ul type="1" >
+                    <li style="font-size:16px; color:white; font-weight: normal;">A Smart Class Enabled System.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Animated presentation of text.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Virtual lab for performing experiments.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Search, for locating any specific topic.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Dictionary, to know the meaning of the word, there and then, helping in understanding.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Pronunciation for the correct audible version of the word.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Features like 'educational games', 'summary' of chapters.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">100% in accordance with the books.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Subject related extra material.</li>
+                    <li style="font-size:16px; color:white; font-weight: normal;">Complete 'edutainment' tool for kids as well as teachers.</li>
+                  </ul>
+
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="info info-horizontal">
+              <div class="icon icon-warning">
+                <i class="now-ui-icons business_chart-bar-32"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">A Productivity Platform</h4>
+                <p class="description">
+                  Integrate the apps your team already uses directly into your workflow.
+                </p>
+              </div>
+            </div> -->
+            <!-- <div class="info info-horizontal">
+              <div class="icon icon-warning">
+                <i class="now-ui-icons arrows-1_refresh-69"></i>
+              </div>
+              <div class="description">
+                <h4 class="info-title">Always In Sync</h4>
+                <p class="description">
+                  No matter where you are, Trello stays in sync across all of your devices.
+                </p>
+              </div>
+            </div> -->
+          </div>
+          <div class="col-md-5 mr-auto">
+              <div class="card card-raised" style="background-image: url('{% static 'img/milli/3.png' %}')" >
+              <div class="card-body">
+                <!-- <h2 class="card-title">Trello lets you work.</h2> -->
+                <!-- <p class="card-description text-white">
+                  Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.
+                </p>
+                <label class="badge badge-neutral">Trello</label> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="separator-line separator-primary"></div>
+
+
+
+
+
+
+
+
+    <!-- <div class="testimonials-1 section-image" style="background-image: url('{% static 'img/bg19.jpg' %}')">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+            <h2 class="title">What is ALPHA?</h2>
+            <h4 class="description text-white">If you’re selected for ALPHA you’ll also get 3 tickets, opportunity to access Investor Office Hours and Mentor Hours and much more all for €850.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-testimonial">
+              <div class="card-avatar">
+                <a href="#">
+                  <img class="img img-raised" src="{% static 'img/michael.jpg' %}">
+                </a>
+              </div>
+              <div class="card-body">
+                <p class="card-description">
+                  The networking at Web Summit is like no other European tech conference.
+                </p>
+              </div>
+              <div class="icon icon-primary">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="card-footer">
+                <h4 class="card-title">Michael Elijah</h4>
+                <p class="category">@michaelelijah</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-testimonial">
+              <div class="card-avatar">
+                <a href="#">
+                  <img class="img img-raised" src="{% static 'img/olivia.jpg' %}">
+                </a>
+              </div>
+              <div class="card-body">
+                <p class="card-description">
+                  The connections you make at Web Summit are unparalleled, we met users all over the world.
+                </p>
+              </div>
+              <div class="icon icon-primary">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="card-footer">
+                <h4 class="card-title">Olivia Harper</h4>
+                <p class="category">@oliviaharper</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-testimonial">
+              <div class="card-avatar">
+                <a href="#">
+                  <img class="img img-raised" src="{% static 'img/james.jpg' %}">
+                </a>
+              </div>
+              <div class="card-body">
+                <p class="card-description">
+                  Web Summit will increase your appetite, your inspiration, and your network.
+                </p>
+              </div>
+              <div class="icon icon-primary">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="card-footer">
+                <h4 class="card-title">James Logan</h4>
+                <p class="category">@jameslogan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="pricing-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+            <h2 class="title">Pick the best plan for you</h2>
+            <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pill1" role="tablist">
+                  Legal Entity
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pill2" role="tablist">
+                  Individual
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-pricing card-plain">
+              <div class="card-body">
+                <h6 class="category">Enterprise</h6>
+                <h1 class="card-title">
+                  <small>$</small>59</h1>
+                <ul>
+                  <li>
+                    <b>10GB</b> Disk Space</li>
+                  <li>
+                    <b>100GB</b> Monthly Bandwidth</li>
+                  <li>
+                    <b>20</b> Email Accounts</li>
+                  <li>
+                    <b>Unlimited</b> subdomains</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-round">
+                  Sign Up
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-pricing card-background card-raised" style="background-image: url('{% static 'img/pricing2.jpg' %}')">
+              <div class="card-body">
+                <h6 class="category text-info">Professional</h6>
+                <h1 class="card-title">
+                  <small>$</small>29</h1>
+                <ul>
+                  <li>
+                    <b>5GB</b> Disk Space</li>
+                  <li>
+                    <b>50GB</b> Monthly Bandwidth</li>
+                  <li>
+                    <b>10</b> Email Accounts</li>
+                  <li>
+                    <b>Unlimited</b> subdomains</li>
+                </ul>
+                <a href="#" class="btn btn-neutral btn-round">
+                  Sign Up
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-pricing card-plain">
+              <div class="card-body">
+                <h6 class="category">Standard</h6>
+                <h1 class="card-title">
+                  <small>$</small>17</h1>
+                <ul>
+                  <li>
+                    <b>2GB</b> Disk Space</li>
+                  <li>
+                    <b>25GB</b> Monthly Bandwidth</li>
+                  <li>
+                    <b>5</b> Email Accounts</li>
+                  <li>
+                    <b>Unlimited</b> subdomains</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-round">
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+
+
+
+    <div class="cd-section" id="teams">
+
+
+
+
+    <div class="section section-contact-us text-center" id="contact">
+      <div class="container">
+        <h2 class="title">Want to know more about us?</h2>
+        <!-- <p class="description">Your project is very important to us.</p> -->
+        <div class="row">
+          <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
+            <form method="post">
+              {% csrf_token %}
+              <!-- <label>Your name</label> -->
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                </div>
+                <input type="text" name="name" class="form-control" placeholder="Your Name..." aria-label="Your Name..." autocomplete="name">
+              </div>
+              <!-- <label>Email address</label> -->
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                </div>
+                <input type="email" class="form-control" name="email" placeholder="Email Here..." aria-label="Email Here..." autocomplete="email">
+              </div>
+              <!-- <label>Phone</label> -->
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="now-ui-icons tech_mobile"></i></span>
+                </div>
+                <input type="text" class="form-control" name="phone" placeholder="Number Here..." autocomplete="number">
+              </div>
+              <div class="form-group">
+                <!-- <label>Your message</label> -->
+                <textarea name="message" class="form-control" name="message"   placeholder="Message Here..." id="message" rows="6"></textarea>
+              </div>
+              <div class="submit text-center">
+                <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us" />
+              </div>
+            </form>
+            <!-- <div class="send-button">
+              <a href="#" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
