@@ -1,8 +1,6 @@
 from django.urls import path,include
 from . import views
 from rest_framework.routers import DefaultRouter
-from django.views.generic import TemplateView
-
 from . import views
 
 app_name = 'home'
@@ -28,17 +26,6 @@ router.register('catalouge',views.catalougeapi)
 router.register('Contactus',views.Contactusapi)
 
 
-
-
-
-
 urlpatterns = [
     path("api/",include(router.urls)),
-    path('', views.landing, name='landing'),
-    path('about-us', views.aboutus, name='about-us'),
-    path('contact-us', views.contactus, name='contact-us'),
-    path('category', views.category, name='category'),
-    path('product', views.product, name='product'),
-    path('landing1', views.landing1, name='landing1'),
-    path('landing2', views.landing2, name='landing2'),
 ]

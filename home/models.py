@@ -8,10 +8,10 @@ from django.db.models.signals import post_save
 
 class HomeBanner(models.Model):
     id=models.AutoField(primary_key=True)
-    bannername = models.CharField(max_length=200, blank=True, verbose_name='Banner Name')
-    first_banner = models.ImageField(upload_to='img/', blank=True, verbose_name='First Banner 4928*3264')
-    first_banner_heading = models.CharField(max_length=200, blank=True, verbose_name='First Banner Heading')
-    first_banner_paragraph = models.CharField(max_length=200, blank=True, verbose_name='First Banner Paragraph')
+    bannername = models.CharField(max_length=200, blank=False, verbose_name='Banner Name')
+    first_banner = models.ImageField(upload_to='img/', blank=False, verbose_name='First Banner 4928*3264')
+    first_banner_heading = models.CharField(max_length=200, blank=False, verbose_name='First Banner Heading')
+    first_banner_paragraph = models.CharField(max_length=200, blank=False, verbose_name='First Banner Paragraph')
     second_banner = models.ImageField(upload_to='img/', blank=True, verbose_name='Second Banner 4928*3264')
     second_banner_heading = models.CharField(max_length=200, blank=True, verbose_name='Second Banner Heading')
     second_banner_paragraph = models.CharField(max_length=200, blank=True, verbose_name='Second Banner Paragraph')

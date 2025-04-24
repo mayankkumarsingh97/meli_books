@@ -4,73 +4,30 @@ from .models import *
 class HomeBanner_seri(serializers.ModelSerializer):
     class Meta:
         model=HomeBanner
-        fields=['id','bannername','first_banner',
-        'first_banner_heading','first_banner_paragraph',
-        'second_banner','second_banner_heading','second_banner_paragraph',
-        'third_banner','third_banner_heading','third_banner_paragraph']
+        fields = '__all__'
 
 
 class HomePageFirstContent_seri(serializers.ModelSerializer):
     class Meta:
         model=HomePageFirstContent
-        fields=[
-            'id',
-            'contentname',
-            'heading',
-             'paragraph',
-            'first_img',
-             'second_img',
-            'second_heading',
-             'second_paragraph',
-            'third_paragraph',
-            'fourth_paragraph',
-            'left_img'
-        ]
+        fields= '__all__'
 
-
-# HomePageSecondContent HomePageSecondContent
-
+##
+# HomePageSecondContent 
+##
 class HomePageSecondContent_seri(serializers.ModelSerializer):
     class Meta:
         model=HomePageSecondContent
-        fields=[
-            'id',
-            'contentname',
-            'heading',
-            'small_heading',
-            'paragraph',
-            'left_img',
-            'point_1',
-            'point_2',
-            'point_3',
-            'point_4',
-            'point_5',
-            'point_6',
-            'point_7',
-            'second_small_heading',
-            'second_paragraph',
-            'right_img',
-            'second_point_1',
-            'second_point_2',
-            'second_point_3',
-            'second_point_4',
-            'second_point_5',
-            'second_point_6',
-            'second_point_7',
-            'second_point_8',
-            'second_point_9',
-            'second_point_10',
-            
-        ]
+        fields='__all__'
 
 class AboutBanner_seri(serializers.ModelSerializer):
     class Meta:
         model=AboutBanner
         fields=['id','bannername','about_banner']      
 
-
-#AboutPageFirstContent_seri AboutPageFirstContent_seri
-
+##
+#AboutPageFirstContent_seri 
+##
 class AboutPageFirstContent_seri(serializers.ModelSerializer):
     class Meta:
         model=AboutPageFirstContent
@@ -82,9 +39,9 @@ class AboutPageFirstContent_seri(serializers.ModelSerializer):
             'third_small_heading','third_paragraph'
         ]
 
-
-# AboutPageSecondContent_seri AboutPageSecondContent_seri
-
+##
+# AboutPageSecondContent_seri 
+##
 class AboutPageSecondContent_seri(serializers.ModelSerializer):
     class Meta:
         model=AboutPageSecondContent
@@ -96,7 +53,9 @@ class AboutPageSecondContent_seri(serializers.ModelSerializer):
             'left_img','img_heading','img_paragraph'
         ]
 
-
+##
+# AboutPage Third Content
+##
 class AboutPageThirdContent_seri(serializers.ModelSerializer):
     class Meta:
         model=AboutPageThirdContent
@@ -108,9 +67,9 @@ class AboutPageThirdContent_seri(serializers.ModelSerializer):
             'img_paragraph'
         ]
 
-
-# AboutPageFourthContent_seri AboutPageFourthContent_seri
-
+##
+# AboutPageFourthContent_seri 
+##
 class AboutPageFourthContent_seri(serializers.ModelSerializer):
     class Meta:
         model=AboutPageFourthContent
@@ -120,8 +79,9 @@ class AboutPageFourthContent_seri(serializers.ModelSerializer):
             'link_2','link_3','link_4','link_5',
         ]
 
-
-# ContactBanner_seri ContactBanner_seri ContactBanner_seri
+##
+# ContactBanner_seri 
+##
 class ContactBanner_seri(serializers.ModelSerializer):
     class Meta:
         model=ContactBanner
@@ -133,8 +93,9 @@ class ContactBanner_seri(serializers.ModelSerializer):
 
 
 
-# ContactPage_seri ContactPage_seri ContactPage_seri
-
+###
+# ContactPage_seri
+###
 class ContactPage_seri(serializers.ModelSerializer):
     class Meta:
         model=ContactPage
@@ -143,14 +104,18 @@ class ContactPage_seri(serializers.ModelSerializer):
             'production_phone','production_email'
         ]
 
-
+###
+# socialmedia_seri
+###
 class socialmedia_seri(serializers.ModelSerializer):
     class Meta:
         model=socialmedia
         fields=[
             'id','social','facebook','instagram','youtube','twitter'
         ]
-
+###
+# ebooks_seri
+###
 class ebooks_seri(serializers.ModelSerializer):
     class Meta:
         model=ebooks
@@ -158,15 +123,19 @@ class ebooks_seri(serializers.ModelSerializer):
             'id','name','ebook'
         ]        
 
-
+###
+# catalouge_seri
+###
 class catalouge_seri(serializers.ModelSerializer):
     class Meta:
         model=catalouge
         fields=['id','cat','cat_pdf']    
 
 
-# contactus_seri contactus_seri contactus_seri contactus_seri
-
+# 
+###
+# contactus_seri
+###
 class contactus_seri(serializers.ModelSerializer):
     class Meta:
         model=Contactus
