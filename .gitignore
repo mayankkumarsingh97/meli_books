@@ -8,7 +8,7 @@ dist/
 build/
 *.manifest
 *.spec
-
+setting.py
 # Django
 *.log
 local_settings.py
