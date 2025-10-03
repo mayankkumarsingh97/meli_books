@@ -11,6 +11,7 @@ A full-featured eCommerce web application built with Django. This project includ
 - Admin dashboard for managing products, orders, and users
 - Payment gateway integration (e.g., Stripe or Razorpay)
 - Responsive design using Bootstrap
+- A new commit added on readme file
 
 ## 🧰 Tech Stack
 
